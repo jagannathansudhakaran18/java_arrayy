@@ -1,0 +1,18 @@
+import java.util.HashSet;
+import java.util.Set;
+
+public class EmployeeSet {
+    public static void main(String[] args) {
+        Set<Integer> empIds = new HashSet<>();
+
+        empIds.add(101);
+        empIds.add(102);
+        empIds.add(103);
+        empIds.add(101); 
+
+        System.out.println("Employee IDs:");
+        for (int id : empIds) {
+            System.out.println(id);
+        }
+    }
+}
